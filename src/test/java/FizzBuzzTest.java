@@ -110,6 +110,7 @@ class FizzBuzzTest {
         // Then
         assertEquals("BUZZ", result);
     }
+
     @Test
     void should_return_fizz_for_int_12() {
         // Given
@@ -120,6 +121,18 @@ class FizzBuzzTest {
 
         // Then
         assertEquals("FIZZ", result);
+    }
+
+    @Test
+    void should_return_fizzbuzz_for_int_15() {
+        // Given
+        int number = 15;
+
+        // When
+        String result = FizzBuzz.getFizzBuzz(number);
+
+        // Then
+        assertEquals("FIZZBUZZ", result);
     }
 
 }
