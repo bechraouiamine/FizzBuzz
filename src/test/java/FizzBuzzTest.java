@@ -86,4 +86,16 @@ class FizzBuzzTest {
         // Then
         assertEquals("7", result);
     }
+
+    @Test
+    void should_return_string_8_for_int_8() {
+        // Given
+        int number = 8;
+
+        // When
+        String result = FizzBuzz.getFizzBuzz(number);
+
+        // Then
+        assertEquals("8", result);
+    }
 }
