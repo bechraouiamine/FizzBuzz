@@ -98,4 +98,16 @@ class FizzBuzzTest {
         // Then
         assertEquals("8", result);
     }
+
+    @Test
+    void should_return_buzz_for_int_10() {
+        // Given
+        int number = 10;
+
+        // When
+        String result = FizzBuzz.getFizzBuzz(number);
+
+        // Then
+        assertEquals("BUZZ", result);
+    }
 }
