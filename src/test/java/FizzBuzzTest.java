@@ -14,4 +14,16 @@ class FizzBuzzTest {
         // Then
         assertEquals("FIZZ", result);
     }
+
+    @Test
+    void should_return_string_1_for_int_1() {
+        // Given
+        int number = 1;
+
+        // When
+        String result = FizzBuzz.getFizzBuzz(number);
+
+        // Then
+        assertEquals("1", result);
+    }
 }

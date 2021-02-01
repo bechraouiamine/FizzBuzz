@@ -4,6 +4,9 @@
 public class FizzBuzz {
 
     public static String getFizzBuzz(int number) {
-        return "FIZZ";
+        if (number == 3) {
+            return "FIZZ";
+        }
+        return "1";
     }
 }
