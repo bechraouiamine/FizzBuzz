@@ -4,18 +4,6 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class FizzBuzzTest {
     @Test
-    void should_return_fizz_for_3() {
-        // Given
-        int number = 3;
-
-        // When
-        String result = FizzBuzz.getFizzBuzz(number);
-
-        // Then
-        assertEquals("FIZZ", result);
-    }
-
-    @Test
     void should_return_string_1_for_int_1() {
         // Given
         int number = 1;
@@ -37,5 +25,29 @@ class FizzBuzzTest {
 
         // Then
         assertEquals("2", result);
+    }
+
+    @Test
+    void should_return_fizz_for_3() {
+        // Given
+        int number = 3;
+
+        // When
+        String result = FizzBuzz.getFizzBuzz(number);
+
+        // Then
+        assertEquals("FIZZ", result);
+    }
+
+    @Test
+    void should_return_string_4_for_int_4() {
+        // Given
+        int number = 4;
+
+        // When
+        String result = FizzBuzz.getFizzBuzz(number);
+
+        // Then
+        assertEquals("4", result);
     }
 }
